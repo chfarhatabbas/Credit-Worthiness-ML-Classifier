@@ -1,24 +1,25 @@
-# Credit-Worthiness-ML-Classifier
-MS Mathematics Thesis: Comparing ML Classifiers and Resampling Techniques on Imbalanced Credit Datasets.
-# Prediction of Bank Credit Worthiness Using Machine Learning
+# Credit Worthiness Prediction Using Machine Learning
 
-An empirical evaluation of classification algorithms and data-balancing techniques optimized for credit risk assessment. This repository hosts the computational architecture developed during my Master of Science (M.Sc.) in Mathematics thesis at Sir Syed CASE Institute of Technology.
+A machine learning framework for predicting bank credit worthiness using supervised classification algorithms and class imbalance handling techniques.
 
-## 📊 Automated Data Pipeline
-To ensure complete reproducibility and eliminate dependencies on localized files or private cloud storage paths, this project features an automated data ingestion architecture:
-* **Data Source:** UCI Machine Learning Repository ("Default of Credit Card Clients" Dataset | ID: 350)
-* **Instance Count:** 30,000 applications containing 23 quantitative and qualitative features.
-* **Ingestion Method:** Automated API streaming utilizing the official `ucimlrepo` library.
-* **Data Alignment:** The pipeline automatically processes the dual-header array, maps structural feature tags back to their original descriptive labels, and mathematically reconstructs indexing dimensions entirely in-memory.
+---
 
-## 🛠️ Methodologies Implemented
-1. **Resampling & Data Balancing:** Synthetic Minority Over-sampling Technique (SMOTE), Random Under-Sampling (RUS), Random Over-Sampling (ROS).
-2. **Machine Learning Classifiers:** Extra Trees (ET) Classifier, Decision Tree (DT) Classifier, and Logistic Regression (LR).
-3. **Statistical Performance Criteria:** Evaluation modeled across Accuracy, Precision, Recall/Sensitivity, Specificity, and F1-score.
+## Project Overview
 
-## 📈 Key Research Findings
-Through comprehensive benchmarking across multiple configurations, the experimental results established that pairing an **Extra Trees (ET) Classifier with Random Over-Sampling (ROS)** yielded optimal predictive performance, stability, and robustness for managing credit default risk.
+This repository contains the implementation of a machine learning framework developed for predicting bank credit worthiness. The project was completed as part of the Master of Science (MS) in Mathematics at Sir Syed CASE Institute of Technology, Islamabad, Pakistan.
 
-## 📂 Project Structure
-* `/src`: Self-contained code files for automated data fetching, preprocessing, sampling execution, and model evaluation.
-* `/docs`: Project documentation, including the thesis title page,  abstract, table of contents, list of figures, list of tables and abbreviations.
+The objective of this research is to investigate the effectiveness of supervised machine learning algorithms for credit risk assessment. The proposed framework applies data preprocessing, feature engineering, and class imbalance handling techniques before training and evaluating multiple classification models.
+
+Three supervised machine learning algorithms are implemented and compared:
+
+- Logistic Regression
+- Decision Tree Classifier
+- Extra Trees Classifier
+
+To address the class imbalance problem commonly encountered in credit datasets, the following sampling techniques are investigated:
+
+- Random Under-Sampling
+- Random Over-Sampling
+- Synthetic Minority Over-sampling Technique (SMOTE)
+
+The models are evaluated using multiple performance metrics, including Accuracy, Precision, Recall, F1-score, Sensitivity, and Specificity. Among the evaluated approaches, the Extra Trees Classifier combined with Random Over-Sampling achieved the best predictive performance on the selected dataset.
