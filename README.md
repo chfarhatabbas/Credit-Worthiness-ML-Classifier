@@ -101,7 +101,7 @@ This project uses the **Default of Credit Card Clients** dataset obtained from t
 | **Domain** | Credit Risk Assessment |
 | **Task** | Binary Classification |
 | **Samples** | 30,000 |
-| **Predictive Features** | 23 |
+| **Predictive Features** | 24 |
 | **Target Variable** | Default Payment Next Month |
 
 The dataset contains demographic information, credit history, bill statements, payment records, and previous payment status of credit card clients. These attributes are used to predict whether a client will default on their credit card payment in the following month.
