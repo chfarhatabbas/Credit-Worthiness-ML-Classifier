@@ -196,12 +196,61 @@ The performance of all machine learning models was compared under different clas
 The experimental results showed that the **Extra Trees Classifier combined with Random Over-Sampling** achieved the best overall predictive performance on the selected dataset.
 
 
-## Machine Learning Models
+---
 
-The following supervised classification algorithms are implemented and evaluated in this study:
+# Machine Learning Models
 
-- Logistic Regression
-- Decision Tree Classifier
-- Extra Trees Classifier
+Three supervised machine learning classification algorithms were implemented and evaluated in this study. These algorithms were selected to compare different learning strategies for predicting credit default while maintaining a consistent experimental framework.
 
-Each model is trained using identical preprocessing procedures to ensure a fair comparison of predictive performance.
+| Model | Category | Description |
+|--------|----------|-------------|
+| Logistic Regression | Linear Model | A statistical classification algorithm used as the baseline model for binary classification. |
+| Decision Tree Classifier | Tree-Based Model | A non-linear model that learns decision rules from the training data and provides interpretable predictions. |
+| Extra Trees Classifier | Ensemble Learning | An ensemble algorithm that constructs multiple randomized decision trees and combines their predictions to improve classification performance and reduce overfitting. |
+
+All models were trained using the same preprocessing pipeline and evaluated under identical experimental conditions to ensure a fair and unbiased comparison.
+
+---
+
+# Handling Class Imbalance
+
+Class imbalance is a common challenge in credit risk prediction because the number of non-default clients is usually much larger than the number of default clients. Training machine learning models on imbalanced data may result in biased predictions toward the majority class.
+
+To investigate the effect of class imbalance on predictive performance, three different sampling techniques were applied before model training.
+
+| Sampling Technique | Description |
+|--------------------|-------------|
+| Random Under-Sampling | Reduces the size of the majority class to obtain a balanced training dataset. |
+| Random Over-Sampling | Increases the minority class by randomly duplicating existing minority samples. |
+| SMOTE (Synthetic Minority Over-sampling Technique) | Generates synthetic minority class samples instead of duplicating existing observations. |
+
+Each sampling technique was independently combined with every machine learning model, allowing a comprehensive comparison of classification performance under different class distributions.
+
+---
+
+# Performance Evaluation
+
+The predictive performance of each machine learning model was assessed using multiple evaluation metrics commonly employed in binary classification problems.
+
+| Evaluation Metric | Purpose |
+|-------------------|---------|
+| Accuracy | Measures the overall proportion of correctly classified instances. |
+| Precision | Evaluates the proportion of correctly predicted positive instances among all predicted positives. |
+| Recall (Sensitivity) | Measures the ability of the model to correctly identify positive cases. |
+| F1-score | Provides the harmonic mean of Precision and Recall, offering a balanced performance measure. |
+| Specificity | Measures the ability of the model to correctly identify negative cases. |
+
+In addition to these quantitative metrics, confusion matrices and classification reports were used to provide a more detailed assessment of model performance.
+
+---
+
+# Experimental Results
+
+The performance of all classification models was compared under different class imbalance handling techniques.
+
+Among all evaluated combinations, the **Extra Trees Classifier combined with Random Over-Sampling** achieved the highest predictive performance on the selected dataset.
+
+The experimental results demonstrate that appropriate handling of class imbalance significantly improves classification performance and that ensemble learning methods can provide more reliable predictions for credit risk assessment.
+
+Detailed performance tables, confusion matrices, and comparative analyses will be included in the `results/` directory as the repository continues to evolve.
+
