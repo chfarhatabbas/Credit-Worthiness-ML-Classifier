@@ -105,20 +105,96 @@ The dataset contains demographic information, credit history, bill statements, p
 
 > **Note:** The dataset is publicly available from the UCI Machine Learning Repository. Please refer to the original dataset source for licensing information and download instructions.
 
-## Methodology
-
-The machine learning workflow implemented in this project consists of the following stages:
-
-1. Data acquisition from the UCI Machine Learning Repository.
-2. Data preprocessing and cleaning.
-3. Exploratory Data Analysis (EDA).
-4. Feature encoding and transformation.
-5. Class imbalance handling using different sampling techniques.
-6. Model training using supervised machine learning algorithms.
-7. Performance evaluation using multiple classification metrics.
-8. Comparative analysis to identify the best-performing model.
-
 ---
+
+# Methodology
+
+The proposed machine learning framework follows a systematic workflow for predicting bank credit worthiness. The complete methodology consists of data acquisition, preprocessing, exploratory analysis, class imbalance handling, model development, performance evaluation, and comparative analysis.
+
+## Workflow
+
+The overall workflow of the proposed framework is illustrated below:
+
+```
+Dataset Acquisition
+        │
+        ▼
+Data Preprocessing
+        │
+        ▼
+Exploratory Data Analysis (EDA)
+        │
+        ▼
+Handling Class Imbalance
+        │
+        ▼
+Model Training
+        │
+        ▼
+Model Evaluation
+        │
+        ▼
+Performance Comparison
+        │
+        ▼
+Best Performing Model
+```
+
+## Methodology Steps
+
+### 1. Dataset Acquisition
+
+The dataset was obtained directly from the UCI Machine Learning Repository using the `ucimlrepo` Python package, ensuring reproducibility and easy access to the latest version of the dataset.
+
+### 2. Data Preprocessing
+
+The raw dataset was prepared for machine learning by performing the necessary preprocessing operations. These included inspecting the dataset structure, handling categorical and numerical variables, checking for missing values, and preparing the feature matrix and target variable for model development.
+
+### 3. Exploratory Data Analysis (EDA)
+
+Exploratory Data Analysis was conducted to better understand the characteristics of the dataset. Various visualizations and statistical summaries were used to examine feature distributions, identify potential patterns, and analyze relationships between variables.
+
+### 4. Handling Class Imbalance
+
+Since credit risk datasets often contain imbalanced class distributions, three different sampling techniques were investigated:
+
+- Random Under-Sampling
+- Random Over-Sampling
+- Synthetic Minority Over-sampling Technique (SMOTE)
+
+The impact of each sampling strategy on model performance was evaluated and compared.
+
+### 5. Model Development
+
+Three supervised machine learning algorithms were trained and evaluated:
+
+| Model | Description |
+|--------|-------------|
+| Logistic Regression | Linear classification model used as the baseline. |
+| Decision Tree | Tree-based classification algorithm capable of learning non-linear decision boundaries. |
+| Extra Trees Classifier | Ensemble learning algorithm based on multiple randomized decision trees. |
+
+Each model was trained using the same preprocessing pipeline to ensure a fair comparison of predictive performance.
+
+### 6. Model Evaluation
+
+The predictive performance of each model was evaluated using several classification metrics:
+
+- Accuracy
+- Precision
+- Recall
+- F1-score
+- Sensitivity
+- Specificity
+
+Confusion matrices and classification reports were also used to analyze model performance.
+
+### 7. Comparative Analysis
+
+The performance of all machine learning models was compared under different class imbalance handling techniques to determine the most effective approach for predicting bank credit worthiness.
+
+The experimental results showed that the **Extra Trees Classifier combined with Random Over-Sampling** achieved the best overall predictive performance on the selected dataset.
+
 
 ## Machine Learning Models
 
