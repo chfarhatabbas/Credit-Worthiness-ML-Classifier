@@ -79,14 +79,6 @@ Credit-Worthiness-ML-Classifier
 
 ---
 
----
-
-## Dataset
-
-This project uses the **Default of Credit Card Clients** dataset obtained from the **UCI Machine Learning Repository**.
-
----
-
 ## Dataset
 
 This project uses the **Default of Credit Card Clients** dataset obtained from the **UCI Machine Learning Repository**.
@@ -253,4 +245,98 @@ Among all evaluated combinations, the **Extra Trees Classifier combined with Ran
 The experimental results demonstrate that appropriate handling of class imbalance significantly improves classification performance and that ensemble learning methods can provide more reliable predictions for credit risk assessment.
 
 Detailed performance tables, confusion matrices, and comparative analyses will be included in the `results/` directory as the repository continues to evolve.
+---
 
+# Technologies Used
+
+The project was developed using the following tools and technologies:
+
+| Category | Technologies |
+|----------|--------------|
+| Programming Environment | Google Colab |
+| Programming Language | Python |
+| Machine Learning | Scikit-learn |
+| Data Manipulation | Pandas, NumPy |
+| Data Visualization | Matplotlib, Seaborn, Plotly |
+| Statistical Analysis | SciPy |
+| Dataset Source | UCI Machine Learning Repository |
+| Version Control | Git, GitHub |
+
+---
+
+# Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/chfarhatabbas/Credit-Worthiness-ML-Classifier.git
+```
+
+Navigate to the project directory:
+
+```bash
+cd Credit-Worthiness-ML-Classifier
+```
+
+Install the required dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+# Usage
+
+1. Clone the repository.
+2. Install the required Python libraries.
+3. Open the Jupyter Notebook located in the `notebooks/` directory using Google Colab or Jupyter Notebook.
+4. Execute the notebook sequentially to reproduce the complete machine learning workflow, including data preprocessing, model training, evaluation, and comparative analysis.
+
+---
+
+# Future Work
+
+This repository will continue to be extended as part of ongoing research in machine learning for credit risk assessment. Planned improvements include:
+
+- Evaluation of additional machine learning algorithms, including Random Forest, Support Vector Machine (SVM), K-Nearest Neighbors (KNN), XGBoost, LightGBM, CatBoost, and Artificial Neural Networks.
+- Hyperparameter optimization using systematic search techniques.
+- Feature selection and dimensionality reduction.
+- Cross-validation for improved model generalization.
+- Explainable Artificial Intelligence (XAI) techniques such as SHAP and LIME.
+- Comparative evaluation using additional benchmark datasets.
+- Publication of the extended research in a peer-reviewed journal.
+
+---
+
+# Citation
+
+If you use this repository in your research, please cite the associated thesis:
+
+**Farhat Abbas**
+
+*Prediction of Bank Credit Worthiness Using Machine Learning Algorithms*
+
+Master of Science in Mathematics
+
+Sir Syed CASE Institute of Technology, Islamabad, Pakistan
+
+2023
+
+---
+
+# License
+
+This project is distributed under the MIT License.
+
+See the `LICENSE` file for more information.
+
+---
+
+# Contact
+
+**Farhat Abbas**
+
+GitHub: https://github.com/chfarhatabbas
+
+For questions, suggestions, or research collaborations, please feel free to open an issue in this repository.
