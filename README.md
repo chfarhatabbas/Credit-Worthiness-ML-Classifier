@@ -26,6 +26,17 @@ The models are evaluated using multiple performance metrics, including Accuracy,
 
 ---
 
+## Key Features
+
+- Machine learning framework for bank credit worthiness prediction.
+- Comparative evaluation of three supervised classification algorithms.
+- Investigation of three class imbalance handling techniques, including SMOTE.
+- Comprehensive performance assessment using multiple classification metrics.
+- Reproducible implementation developed in Google Colab using Python and Scikit-learn.
+- Structured research repository designed to support future journal publication and academic research.
+
+---
+
 ## Research Objectives
 
 The primary objective of this research is to investigate the application of supervised machine learning techniques for predicting bank credit worthiness and supporting credit risk assessment.
